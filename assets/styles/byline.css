@@ -1,0 +1,27 @@
+/** byline.css */
+
+.byline {
+    border: 2px solid #9f7c82;
+    background: #9f7c82;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    overflow: auto;
+    clear: both;
+}
+
+.byline .figure {
+    border: none;
+}
+
+.byline p::first-letter {
+    font-size: 2em;
+}
+
+.byline p {
+    font-size: 12px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

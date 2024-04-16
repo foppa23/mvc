@@ -1,0 +1,39 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+    {# <h1>About MVC</h1>
+    <p>An image which can be clicked on.</p>
+    <a href="{{ asset('img/glider.svg') }}">
+        <img src="{{ asset('img/glider.svg') }}" alt="">
+    </a> #}
+<div class="two-col-layout">
+    <main class="main">
+        <article class="article">
+            <h1>Kursen MVC</h1>
+
+            <figure class="figure">
+                <img src="img/mylaptop_300px.jpg" width="300" alt="Min laptop">
+            </figure>
+
+            <p>Kursen <strong>Objektorienterade webbteknologier</strong>, även kallad <strong>MVC</strong>, är en kurs på 7,5 hp som
+            ingår i utbildningen Webbprogrammering 120 hp på Blekinge tekniska högskola.
+            </p>
+            <p>I kursen arbetar vi bland annat med objektorienterad programmering i PHP med ramverket Symfony, enhetstester och databaskopplingar.</p>
+            <p>MVC (Model - View - Controller) är ett designmönster som används för att göra koden mer modulär.
+            Det underlättar underhåll och utveckling särskilt när man arbetar i team.</p>
+
+            <p></p>
+        </article>
+    </main>
+
+    <aside class="aside">
+        <h3>GitHub</h3>
+
+        <div><a href="https://github.com/dbwebb-se/mvc" style="font-weight:bold">Kursrepo för MVC</a></div>
+        <div><a href="https://github.com/foppa23" style="font-weight:bold">Min egen GitHub</a></div>
+    </aside>
+</div>
+
+{% endblock %}

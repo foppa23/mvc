@@ -1,0 +1,28 @@
+{# templates/lucky_number.html.twig #}
+
+{% extends "base.html.twig" %}
+
+{% block title %}Gissa bilden{% endblock %}
+
+{% block body %}
+<main class="main">
+    <article class="article">
+        <header>
+            <h1>Gissa bilden</h1>
+        </header>
+        <br>
+        <p>En slumpad bild kommer att visas när du laddar om sidan.<br>
+        Gissa vilken du kommer att få se av följande:</p>
+        <ul class="image-list">
+            <li>Istappar</li>
+            <li>Norrsken</li>
+            <li>Humla</li>
+            <li>Soluppgång på fjäll</li>
+            <li>Fågel, ljungpipare</li>
+        </ul>
+        <figure class="figure">
+            <img src="{{ asset('img/' ~ image) }}" alt="Slumpvald bild">
+        </figure>
+    </article>
+</main>
+{% endblock %}

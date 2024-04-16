@@ -1,0 +1,54 @@
+/** header.css */
+
+/*
+ * Prepare variables.
+ */
+:root {
+    --light-color: #ffffff;
+    --medium-color: #6e8c9e;
+    --dark-color: #574d60;
+}
+
+/*
+ * Set colors, size and prepare positioning.
+ */
+.header {
+    background-color: var(--medium-color);
+    position: relative;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Position and size the logo.
+ */
+.header .logo {
+    width: 100px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+/*
+ * Modify and position the title.
+ */
+.header .title {
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    position: relative;
+    top: -65px;
+    left: 150px;
+}
+
+/*
+ * Modify and position the subtitle.
+ */
+.header .subtitle {
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    display: inline-block;
+    position: relative;
+    top: -40px;
+    left: -72px; 
+}

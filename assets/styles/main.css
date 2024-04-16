@@ -1,0 +1,78 @@
+/** main.css */
+
+/*
+ * Set colors and size.
+ */
+body {
+    background-color: #eee;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.article {
+    overflow: auto;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.article h1 {
+    font-size: 2em;
+    border-bottom: 4px double #ccc;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
+p.kmom {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.article .author {
+    margin-top: -1em;
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+.main,
+.main .article {
+    min-height: 50em;
+}
+
+.aside {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 10px;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+    min-height: 10em;
+}
+
+.aside h3 {
+    border-bottom: 4px double #ccc;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
+.aside li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.aside a {
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #6e8c9e;
+}
+
+.aside a:hover {
+    color: #b76573;
+}

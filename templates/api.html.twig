@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}API{% endblock %}
+
+{% block body %}
+<div class="two-col-layout">
+<main class="main">
+    <aside class="aside">
+        <h3>Innehållsförteckning</h3>
+        <ul>
+            <li><a href="#api/quote">api/quote</a></li>
+        </ul>
+    </aside>
+</main>
+    <article class="article">
+    <h1>API-dokumentation</h1>
+        <h3 id="api/quote">api/quote</h3>
+        <p class="kmom">Innehåller dagens citat, dagens datum och tid för när svaret genererades.</p>
+
+    </article>
+</div>
+{% endblock %}

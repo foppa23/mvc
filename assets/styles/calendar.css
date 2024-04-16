@@ -1,0 +1,79 @@
+/** calendar.css */
+
+/* The whole table */
+table.calendar {
+    border-width: 1px;
+    border: 3px solid grey;
+    border-radius: 20px;
+    border-spacing: 10px;
+    color: grey;
+    padding: 30px;
+}
+
+/* Month and year */
+.table_header {
+    color: #b76573;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    font-weight: bold;
+    font-size:large;
+    text-align: left;
+    
+}
+
+/* Navigation links */
+.navigate a {
+    color: #6e8c9e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:small;
+    text-align: left;
+}
+
+/* Space under navigation */
+.navigate th {
+    padding-bottom: 20px;
+}
+
+/* Red sundays */
+.red_sunday {
+    color: red;
+    font-size: large;
+}
+
+/* Day */ 
+.day_of_month {
+    color:black;
+    font-size: large;
+}
+
+/* Weekday */
+.weekday {
+    color:black;
+    font-size: large;
+    text-align: left;
+}
+
+/* Day of the year */
+.day_of_year {
+    color: black;
+    font-size: xx-small;
+}
+/* Week number */
+.week_number {
+    color: black;
+    font-size: small;
+    text-align: right;
+    
+}
+
+/* Weeknumber on Mondays or the 1st day of the month */
+.monday_class {
+    color:black;
+    font-size: small;
+}
+
+.table_rows td {
+    border-bottom: 1px solid gray;
+}
+

@@ -1,0 +1,31 @@
+/** figure.css */
+
+.figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em;
+    border: none;
+}
+
+.figure img {
+    max-width: 100%;
+}
+
+.figure figcaption {
+    caption-side: bottom;
+    font-style: italic;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 0.25em;
+}
+
+.figure.right {
+    float: right;
+    margin-left: 0.9em;
+    margin-bottom: 0.3em;
+}
+
+.figure.left {
+    float: left;
+    margin-right: 1em;
+}

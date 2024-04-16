@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="{{ asset('img/glider.svg') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+
+    <body>
+        <header>
+        <header class="header" style="background-image: url({{ asset('img/murtser800px.jpg') }})">
+            <span class="header-title">Objektorienterade webbteknologier - MVC</span>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ path('home') }}">Hem</a></li>
+                <li><a href="{{ path('about') }}">Om kursen</a></li>
+                <li><a href="{{ path('report') }}">Rapport</a></li>
+                <li><a href="{{ path('lucky') }}">Gissa bilden</a></li>
+                <li><a href="{{ path('api') }}">API</a></li>
+            </ul>
+        </nav>
+
+        <main>
+        {% block body %}{% endblock %}
+        </main>
+
+        <footer class="footer">
+            <div class="row">
+                <div class="col3 box">
+                <h4>Validering</h4>
+                    <ul>
+                        <li><a href="http://validator.w3.org/check/referer">HTML</a></li>
+                        <li><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></li>
+                        <li><a href="https://validator.w3.org/checklink">Link checker</a></li>
+                        <li><a href="https://pagespeed.web.dev/">PageSpeed</a></li>
+                    </ul>
+                </div>
+
+                <div class="col3 box">
+                <h4>Resurser</h4>
+                    <ul>
+                        <li><a href="https://web.dev/measure/">web.dev</a></li>
+                        <li><a href="https://caniuse.com/">Can I Use</a></li>
+                        <li><a href="https://codepen.io/">CodePen</a></li>
+                    </ul>
+                </div>
+
+                <div class="col3 box">
+                <h4>Manualer</h4>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN: HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN: CSS</a></li>
+                        <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+                        <li><a href="https://www.w3.org/2009/cheatsheet/">Cheat Sheet</a></li>
+                        <li><a href="https://www.php.net/manual/en/">PHP</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col1 final">
+                    <br>
+                    <p>Copyright &copy; 2024 Charlotte Forsberg</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

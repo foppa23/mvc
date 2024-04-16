@@ -1,0 +1,62 @@
+/** friday.css */
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 200px;
+    }
+    50% {
+        top: 0px;
+        left: 0px;
+    }
+    75% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.friday {
+    animation: blink 1s infinite, bounceText 4s ease-in-out infinite;
+    position: relative;
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #cb58a5;
+}
+
+.notfriday {
+    font-size: medium;
+    color: #000000;
+}
+
+.notfriday p {
+    font-size: x-large;
+    font-weight: bold;
+    color: #cb58a5;
+}
+
+.notfriday span {
+    font-size: x-large;
+    font-weight: bold;
+    color: #6e8c9e;
+}
+
+.image_space_above {
+    margin-top: 20px; 
+}

@@ -1,0 +1,126 @@
+/** photocal.css */
+
+/* The whole table */
+.photo-calendar {
+    border-width: 1px;
+    border: 3px solid grey;
+    border-radius: 20px;
+    border-spacing: 10px;
+    color: grey;
+    padding: 30px;
+}
+/* Navigation links */
+.navigate-photocal a {
+    color: #6e8c9e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:small;
+    text-align: left;
+}
+
+/* Month and year */
+.table-month-photocal {
+    color: #6e8c9e;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    
+}
+
+/* Header for week and weekdays */
+.table-header-photocal {
+    color: grey;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+/* Red on sundays */
+.photocal-cell-sunday {
+    color: red;
+    position: relative;
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.photocal-cell {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.week-number {
+    color: black;
+    font-size: 11px;
+    text-align: right;
+    padding: 5px;
+}
+
+.day-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.day-of-year {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.name-day {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 14px;
+}
+
+/* Image disply */
+.cal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2px;
+    width: 80%;
+}
+
+/* Photo caption */
+.photo-caption {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+/* Column 2  - temporary solution while debugging*/
+td:nth-child(2) {
+    color: grey;
+}
+
+/* Column 7 */
+td:nth-child(7) {
+    background: rgb(236, 236, 236);
+}
+
+/* Column 8 */
+td:nth-child(8) {
+    background: rgb(236, 236, 236);
+    color: rgb(224, 11, 11);
+}

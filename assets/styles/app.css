@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    color: #333;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.3;
+    font-family: "Nunito", sans-serif;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.header {
+    width: auto;
+    min-height: 184px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-title {
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px #333;
+    color: #575fa0;
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+
+
+/*
+ * Navbar
+ */
+.navbar {
+    background-color: #bf8494;
+    text-align: center;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    text-shadow: 1px 1px #333;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #EEE;
+    background-color: #575fa0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.navbar li {
+    display: inline;
+}
+
+/* Article and aside */
+.article {
+    overflow: auto;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-top: 1.2rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3rem;
+    font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    min-height: 50em;
+}
+
+.article h1 {
+    font-size: 1.6em;
+    border-bottom: 4px double #ccc;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
+.article p {
+    padding-bottom: 1.3rem;
+}
+
+p.kmom {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.article .author {
+    margin-top: -1em;
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+.article h3 {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.main,
+.main .article {
+    min-height: 50em;
+}
+
+.aside {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 10px;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+    min-height: 10em;
+}
+
+.aside h3 {
+    border-bottom: 4px double #ccc;
+    margin-bottom: 0.9rem;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
+.aside div {
+    margin-bottom: 0.6rem;
+}
+
+.aside li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.aside a {
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #6e8c9e;
+}
+
+.aside a:hover {
+    color: #b76573;
+}
+
+
+/* Two column layout */
+.two-col-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:800px;
+    margin: 0 auto;
+}
+
+.two-col-layout > .article {
+    width: calc(100% / 16 * 12); /* 12/16 width */
+}
+
+.two-col-layout > .aside {
+    width: calc(100% / 16 * 4); /* 4/16 width */
+    min-width: 25%;
+}
+
+
+/* Figure */
+.figure {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5em;
+    border: none;
+}
+
+.figure img {
+    max-width: 100%;
+}
+
+figcaption {
+    caption-side: bottom;
+    font-style: italic;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 0.25em;
+}
+
+.figure-right {
+    float: right;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.figure-left {
+    float: left;
+    margin-right: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.image-list {
+    margin-left: 40px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Footer */
+.footer {
+    background: linear-gradient(to top, #707070, #b5b5b5);
+    color: #FFF;
+    font-size: medium;
+    padding: 1em 2em 2em;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Style the links.
+ */
+.footer a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #b76573;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+ * Style the content.
+ */
+.box h4 {
+    border-bottom: 2px double #fff;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 6px;
+    margin-bottom: 1rem;
+}
+
+.final {
+    text-align: center;
+    font-size: small;
+}
+
+/*
+ * Style the rows and columns.
+ */
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.footer li {
+    display: block;
+}
+
+.footer .row > .col3 {
+    width: calc(100% / 3);
+}
+
+.footer .row > .col1 {
+    width: 100%;
+}

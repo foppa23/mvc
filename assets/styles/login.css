@@ -1,0 +1,65 @@
+.success {
+    background-color: rgb(73, 121, 101);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.warning {
+    background-color: #8b0d0d;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.warning p, .success p {
+    padding-left: 0.5em;
+}
+
+.login-table {
+    padding: 1.5em;
+    padding-inline-start: 0px;
+}
+
+.login-table th {
+    border: 1px solid gray;
+    padding: 0.5em;
+    color: white;
+    background-color: #6e8c9e;
+    font-size: 0.8rem;
+}
+
+.login-table td {
+    border: 1px solid gray;
+    padding: 0.5em;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.login-edit {
+    padding: 1em;
+    font-weight: bold;
+}
+
+.login-edit td {
+    padding-right: 3em;
+}
+
+.login-legend {
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 30%;
+    
+}
+
+.avatar td {
+    padding: 0.2em;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.avatar td:hover {
+    border: 2px solid rgb(97, 97, 97);
+}

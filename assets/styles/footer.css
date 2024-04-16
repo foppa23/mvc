@@ -1,0 +1,63 @@
+/** footer.css */
+
+/*
+ * Set colors and size.
+ */
+.footer {
+    background: linear-gradient(to top, #93a6b1, #6e8c9e);
+    color: #FFF;
+    font-size: medium;
+    padding: 0 1em 2em;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Style the links.
+ */
+.footer a {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #b76573;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*
+ * Style the content.
+ */
+.box h4 {
+    border-bottom: 2px double #fff;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.final {
+    text-align: center;
+    font-size: small;
+}
+
+/*
+ * Style the rows and columns.
+ */
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.footer li {
+    display: block;
+}
+
+.footer .row > .col3 {
+    width: calc(100% / 3);
+}
+
+.footer .row > .col1 {
+    width: 100%;
+}

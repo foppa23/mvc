@@ -1,0 +1,39 @@
+.success_message {
+    font-size: large;
+    color: #4CAF50;
+    }
+
+.error_message {
+    font-size: large;
+    color: red;
+}
+
+.session-link {
+    font-weight: bold;
+    font-size: small;
+}
+
+.session-headline {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.guess-meaning {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: #aebfc9;
+    padding: 20px;
+}
+
+.guess-again {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #6e8c9e;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid rgb(65, 65, 65);
+}
+
