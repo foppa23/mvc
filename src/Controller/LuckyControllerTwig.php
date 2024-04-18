@@ -51,6 +51,8 @@ class LuckyControllerTwig extends AbstractController
     #[Route("/api/quote")]
     public function jsonQuote(): Response
     {
+        date_default_timezone_set('Europe/Stockholm');
+
         $quotes = [
             "Hemligheten till en bra dygnsrytm är att aldrig sova.",
             "Man ska aldrig generalisera.",
