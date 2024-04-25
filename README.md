@@ -7,12 +7,11 @@ This is a Git repository for the course MVC at Blekinge Tekniska Högskola, BTH.
 ## Clone repo
 In your terminal move to the location where you want the repository installed.
 
-Type:
+Run:
 
 ```
 git clone https://github.com/foppa23/mvc
 ```
-and press `Enter`
 
 ## Run website on local machine
 In your terminal run:

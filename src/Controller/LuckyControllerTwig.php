@@ -56,7 +56,7 @@ class LuckyControllerTwig extends AbstractController
         $quotes = [
             "Hemligheten till en bra dygnsrytm är att aldrig sova.",
             "Man ska aldrig generalisera.",
-            "When people tell me You are going to regret that in the morning. I sleep until late afternoon because I am a problem solver."
+            "When people tell me you are going to regret that in the morning. I sleep until late afternoon because I am a problem solver."
         ];
 
         $time = date('Y-m-d H:i:s');
