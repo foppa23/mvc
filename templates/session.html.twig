@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Session{% endblock %}
+
+{% block body %}
+
+    <main class="main">
+        <article class="article">
+            <h1>Session</h1>
+
+            <figure class="figure">
+                <img src="img/mylaptop_200px.jpg" width="200" alt="Min laptop">
+            </figure>
+
+            <p>Innehåll i sessionen:</p>
+            {{ dump(session)}}
+
+            <p><a href="{{ path('session_delete')}}">Rensa sessionen</a></p>
+            {{ include('flash.html.twig') }}
+
+
+        </article>
+    </main>
+
+{% endblock %}
