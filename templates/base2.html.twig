@@ -28,14 +28,14 @@
                 <li><a href="{{ path('home') }}">Hem</a></li>
                 <li><a href="{{ path('about') }}">Om kursen</a></li>
                 <li><a href="{{ path('report') }}">Rapport</a></li>
-                <li><a href="{{ path('api') }}">API</a></li>
                 <li><a href="{{ path('lucky') }}">Gissa bilden</a></li>
-                <li><a href="{{ path('pig_init_post') }}">Pig game</a></li>
+                <li><a href="{{ path('api') }}">API</a></li>
+                {# <li><a href="{{ path('pig_start') }}">Pig game</a></li> #}
             </ul>
         </nav>
 
         <main>
-        {% block body %}{% endblock %}
+        {% block main %}{% endblock %}
         </main>
 
         <footer class="footer">

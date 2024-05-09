@@ -280,3 +280,57 @@ figcaption {
 .footer .row > .col1 {
     width: 100%;
 }
+
+/* Kmom02 */
+/* body {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #eee;
+    font-size: 2em;
+} */
+
+input {
+    font-size: 1em;
+}
+
+.pig-header {
+    padding-top: 20px;
+}
+
+.pig-text {
+    padding-bottom: 200px;
+}
+
+.die {
+    font-size: 2em;
+}
+
+ul.display-dice {
+    list-style-type: none;
+    margin: 0;
+    /* padding-bottom: 100px; */
+}
+
+ul.display-dice li {
+    display: inline;
+}
+
+.flash-notice {
+    padding: 0.5em;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.flash-notice:before {
+    content: "ⓘ";
+}
+
+.flash-warning {
+    padding: 0.5em;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.flash-warning:before {
+    content: "⚠";
+}

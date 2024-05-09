@@ -8,5 +8,4 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class LuckyControllerJson
 {
-
 }
