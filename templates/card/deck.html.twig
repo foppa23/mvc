@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Kortlek{% endblock %}
+
+{% block body %}
+
+    <main class="main">
+        <article class="article">
+            <h1>Kortlek</h1>
+
+    <div>
+        {% for card in deck %}
+            <img src="{{ card.getURL() }}" alt="{{ card }}" height="100"/>
+        {% endfor %}
+    </div>
+
+        </article>
+    </main>
+
+{% endblock %}

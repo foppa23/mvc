@@ -46,7 +46,7 @@ main {
  * Navbar
  */
 .navbar {
-    background-color: #bf8494;
+    background-color: #a88ca3;
     text-align: center;
     font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
     font-size: 1.2em;
@@ -61,8 +61,9 @@ main {
 }
 
 .navbar a:hover {
-    color: #EEE;
-    background-color: #575fa0;
+    color: #333;
+    background-color: #dad7e2;
+    text-shadow: none;
 }
 
 .navbar ul {
@@ -102,6 +103,12 @@ main {
     padding-bottom: 1.3rem;
 }
 
+.article h2 {
+    font-size: 1.4em;
+    border-bottom: 4px double #ccc;
+    font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
+}
+
 p.kmom {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
@@ -113,8 +120,14 @@ p.kmom {
     color: #666;
     font-style: italic;
 }
+
 .article h3 {
     padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.article h4 {
+    padding-top: 0.7rem;
     font-size: 1rem;
 }
 
@@ -281,14 +294,6 @@ figcaption {
     width: 100%;
 }
 
-/* Kmom02 */
-/* body {
-    margin: 0 auto;
-    max-width: 800px;
-    background-color: #eee;
-    font-size: 2em;
-} */
-
 input {
     font-size: 1em;
 }
@@ -308,7 +313,6 @@ input {
 ul.display-dice {
     list-style-type: none;
     margin: 0;
-    /* padding-bottom: 100px; */
 }
 
 ul.display-dice li {
@@ -333,4 +337,82 @@ ul.display-dice li {
 }
 .flash-warning:before {
     content: "⚠";
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.single-card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card-button {
+    border: 1px solid #333;
+    padding: 1rem;
+    background-color: #d3c5d0;
+    /* background-color: #d8bec5; */
+    /* color: #323232; */
+    color: white;
+    /* box-shadow: 2px 2px 2px #323232; */
+    box-shadow: 2px 2px 5px #333;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    width: 40%;
+}
+
+.card-button a {
+    text-decoration: none;
+    color: #323232;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: #a88ca3;
+    /* background-color: #dad7e2; */
+}
+
+.span1 {
+    grid-column: span 1;
+}
+
+.span2 {
+    grid-column: span 2;
+}
+
+.span3 {
+    grid-column: span 3;
+}
+
+.button {
+    color: #333;
+    background-color: #d3c5d0;
+    background-image: linear-gradient(#d3c5d0, #a88ca3);
+    border: 1px solid #7c5d79;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 5px #333;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    min-width: 120px;
+}
+
+.api-h3 {
+        font-size: 1.2em;
+        border-bottom: 4px double #ccc;
+        margin-bottom: 1rem;
+        font-family: Calibri, Myriad, Tahoma, Geneva, Helvetica, Arial, sans-serif;
 }

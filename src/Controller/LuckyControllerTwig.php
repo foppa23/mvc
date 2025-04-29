@@ -41,39 +41,38 @@ class LuckyControllerTwig extends AbstractController
 
         return $this->render('lucky.html.twig', $data);
     }
-
-    #[Route("/api", name: "api")]
-    public function api(): Response
-    {
-        return $this->render('api.html.twig');
-    }
-
-    #[Route("/api/quote")]
-    public function jsonQuote(): Response
-    {
-        date_default_timezone_set('Europe/Stockholm');
-
-        $quotes = [
-            "Hemligheten till en bra dygnsrytm är att aldrig sova.",
-            "Man ska aldrig generalisera.",
-            "When people tell me you are going to regret that in the morning. I sleep until late afternoon because I am a problem solver."
-        ];
-
-        $time = date('Y-m-d H:i:s');
-
-        $index = array_rand($quotes);
-        $randomQuote = $quotes[$index];
-
-        $data = [
-            'quote' => $randomQuote,
-            'date' => $time
-        ];
-
-        $response = new JSONResponse($data);
-        $response->setEncodingOptions(
-            $response->getEncodingOptions() | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
-        );
-
-        return $response;
-    }
 }
+// #[Route("/api", name: "api")]
+// public function api(): Response
+// {
+//     return $this->render('api.html.twig');
+// }
+
+// #[Route("/api/quote")]
+// public function jsonQuote(): Response
+// {
+//     date_default_timezone_set('Europe/Stockholm');
+
+//     $quotes = [
+//         "Hemligheten till en bra dygnsrytm är att aldrig sova.",
+//         "Man ska aldrig generalisera.",
+//         "When people tell me you are going to regret that in the morning. I sleep until late afternoon because I am a problem solver."
+//     ];
+
+//     $time = date('Y-m-d H:i:s');
+
+//     $index = array_rand($quotes);
+//     $randomQuote = $quotes[$index];
+
+//     $data = [
+//         'quote' => $randomQuote,
+//         'date' => $time
+//     ];
+
+//     $response = new JSONResponse($data);
+//     $response->setEncodingOptions(
+//         $response->getEncodingOptions() | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+//     );
+
+//     return $response;
+// }

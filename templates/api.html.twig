@@ -9,14 +9,63 @@
         <h3>Innehållsförteckning</h3>
         <ul>
             <li><a href="#api/quote">api/quote</a></li>
+            <li><a href="#api/deck">api/deck</a></li>
+            <li><a href="#api/deck/shuffle">api/deck/shuffle</a></li>
+            <li><a href="#api/deck/draw">api/deck/draw</a></li>
+            <li><a href="#api/deck/draw/number">api/deck/draw/:number</a></li>
         </ul>
     </aside>
 </main>
     <article class="article">
-    <h1>API-dokumentation</h1>
-        <h3 id="api/quote"><a href="api/quote">api/quote</a></h3>
+        <h1>API-dokumentation</h1>
+        <br>
+        <h3 class="api-h3" id="api/quote">Dagens citat</h3>
         <p class="kmom">Innehåller dagens citat, dagens datum och tid för när svaret genererades.</p>
+        <a href="{{ path('api_quote') }}" class="button">api/quote</a>
 
+        <h3  class="api-h3" id="api/deck">Visa sorterad kortlek</h3>
+        <p class="kmom">Visar en sorterad kortlek i JSON-format.</p>
+        <a href="{{ path('api_deck') }}" class="button">api/deck</a>
+
+        <h3  class="api-h3" id="api/deck/shuffle">api/deck/shuffle</h3>
+        <p class="kmom">Blandar kortleken och lagrar den i sessionen.</p>
+        <form action="{{ path('api_shuffle_deck') }}" method="post">
+            <button type="submit" class="button">Visa blandad kortlek</button>
+        </form>
+
+        <h3  class="api-h3" id="api/deck/draw">api/deck/draw</h3>
+        <p class="kmom">Drar ett kort från kortleken i sessionen.</p>
+        <form action="{{ path('api_draw_one') }}" method="post">
+            <button type="submit" class="button">Dra ett kort</button>
+        </form>
+
+        <h3  class="api-h3" id="api/deck/draw/number">api/deck/draw/:number</h3>
+        <p class="kmom">Drar ett valt antal kort.</p>
+        <form action="{{ path('api_draw_cards', {'number': 3}) }}" method="post">
+            <label for="number">Antal kort:</label>
+            <input type="number" id="number" name="number" min="1" max="52" value="3">
+            <button class="button" type="submit" formaction="{{ path('api_draw_cards', {'number': 3}) }}">Visa dragna kort</button>
+        </form>
+
+
+        {# <h3 id="api/deck/shuffle">
+            <a href="{{ path('api_shuffle_deck') }}">api/deck/shuffle</a>
+        </h3>
+        <p class="kmom">Blandar och visar en kortlek och lagrar den i sessionen.</p>
+
+        <h3 id="api/deck/draw">
+            <a href="{{ path('api_draw_one') }}">api/deck/draw</a>
+        </h3>
+        <p class="kmom">Drar ett kort från kortleken i sessionen.</p>
+
+        <h3 id="api/deck/draw/number">
+            <a href="#">api/deck/draw/:number</a>
+        </h3>
+        <p class="kmom">Drar och visar <code>:number</code> kort från kortleken i sessionen.</p> #}
+
+        {# <h3 id="api/deck/draw/number"><a href="#">api/deck/draw/:number</a></h3> #}
+        {# <h3 id="api/deck/draw/number"><a href="{{ path('api_draw_cards') }}">api/deck/draw/:number</h3>
+        <p class="kmom">Drar och visar <code>:number</code> kort från kortleken i sessionen.</p> #}
     </article>
 </div>
 {% endblock %}

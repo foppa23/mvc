@@ -9,7 +9,7 @@ class DiceHand
     private $hand = [];
 
     public function add(Dice $die): void        // Skicka in ett objekt av Dice
-        {
+    {
         $this->hand[] = $die;
     }
 

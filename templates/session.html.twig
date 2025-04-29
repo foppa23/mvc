@@ -14,8 +14,8 @@
 
             <p>Innehåll i sessionen:</p>
             {{ dump(session)}}
-
-            <p><a href="{{ path('session_delete')}}">Rensa sessionen</a></p>
+            <br><br>
+            <p><a href="{{ path('session_delete')}}" class="button">Rensa sessionen</a></p>
             {{ include('flash.html.twig') }}
 
 

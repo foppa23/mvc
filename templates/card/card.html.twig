@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Kortspel{% endblock %}
+
+{% block body %}
+
+    <main class="main">
+        <article class="article">
+            <h1>Kortspel</h1>
+            <br>
+            <div class="card-button span1">
+                <a href="card/deck">Visa kortleken</a>
+            </div>
+            <div class="card-button span1">
+                <a href="card/deck/shuffle">Blanda kortleken</a>
+            </div>
+            <div class="card-button span1">
+                <a href="card/deck/draw">Dra ett kort</a>
+            </div>
+            <div class="card-button span1">
+                <a href="card/deck/draw-multi">Dra valfritt antal kort</a>
+            </div>
+            <br><br><br>
+            <h2>Klasser</h2>
+
+            <h4>Card</h4>
+            <p>Klassen <i>Card</i> skapar ett spelkort.</p>
+
+            <h4>CardGraphic</h4>
+            <p>Klassen <i>CardGraphic</i> är en subklass och ärver från <i>Card</i>. Den har metoder för att
+            skapa filnamn och URL till bilder på spelkorten.</p>
+
+            <h4>Deck</h4>
+            <p>Klassen <i>Deck</i> skapar en kortlek av <i>Card</i> eller
+            <i>CardGraphics</i> objekt. <i>Deck</i> har en komposition med <i>Card</i> eller <i>CardGraphic</i>
+            eftersom den innehåller flera sådana objekt.</p>
+            <br>
+            <h2>UML-diagram</h2>
+            <figure class="figure-left">
+                <img src="https://www.student.bth.se/~chfo23/dbwebb-kurser/mvc/me/report/public/img/CardGame_drawio.png" width="500" alt="UML-diagram">
+            </figure>
+        </article>
+    </main>
+
+{% endblock %}

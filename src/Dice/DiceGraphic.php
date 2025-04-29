@@ -13,7 +13,7 @@ class DiceGraphic extends Dice
         '⚅',
     ];
 
-    public function __construct()       // Anropa constructor i parenklassen Dice
+    public function __construct()       // Anropa constructor i parent-klassen Dice
     {
         parent::__construct();
     }

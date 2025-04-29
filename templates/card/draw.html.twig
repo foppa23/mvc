@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Visa kortleken{% endblock %}
+
+{% block body %}
+{% if drawnCard %}
+<div class="single-card">
+    <p><img src="../{{ drawnCard.getURL() }}" alt="{{ drawnCard }}" height="100"/></p>
+    <br>
+    <h3>Antal kort kvar: {{ remainingCards }}</h3>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Dra flera kort{% endblock %}
+
+{% block body %}
+    <br><br>
+    <div class="card">
+        {% for card in cardsDrawn %}
+            <img src="../../{{ card.getURL() }}" alt="{{ card }}" height="100">
+        {% endfor %}
+    </div>
+
+    <h3>Antal kort kvar: {{ remainingCards }}</h3>
+    <br><br>
+
+{% endblock %}

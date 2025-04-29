@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Dra flera kort{% endblock %}
+
+{% block body %}
+    <form id="draw-form">
+        <br><br>
+        <label for="num"><h3>Välj hur många kort du vill dra:</h3></label>
+        <br>
+        <input type="number" id="num" name="num" min="1" max="{{remainingCards}}" value="1" required>
+        <button type="submit" class="button">Dra kort</button>
+        <br><br>
+    </form>
+
+    <script>
+        const form = document.getElementById('draw-form');
+        form.addEventListener('submit', function(event) {
+            // Prevent to send by GET
+            event.preventDefault();
+            const num = document.getElementById('num').value;
+            window.location.href = 'https://www.student.bth.se/~chfo23/dbwebb-kurser/mvc/me/report/public/card/deck/draw/' + num; // Skicka till rätt adress
+        });
+    </script>
+{% endblock %}
