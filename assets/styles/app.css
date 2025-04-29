@@ -131,6 +131,11 @@ p.kmom {
     font-size: 1rem;
 }
 
+.article h4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 .main,
 .main .article {
     min-height: 50em;

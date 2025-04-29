@@ -41,7 +41,6 @@ class CardGameController extends AbstractController
         return $this->redirectToRoute('session');
     }
 
-
     #[Route("/card", name: "card_home")]
     public function cardHome(
         SessionInterface $session
@@ -143,7 +142,6 @@ class CardGameController extends AbstractController
             'remainingCards' => count($deck),
         ]);
     }
-
 
     #[Route("/card/deck/draw/{num<\d+>}", name: "card_draw_num")]
     public function drawNum(

@@ -47,8 +47,43 @@
         är en referens till objektet.</p>
 
         <h3 id="kmom02">Kmom02</h3>
-        <p class="kmom">Här kommer redovisningstexten för detta kursmoment.
-        </p>
+        <p class="kmom">Det här kursmomentet har tagit upp olika objektorienterade konstruktioner:</p>
+        <h4>Arv (Inheritance)</h4>
+        <p class="kmom">När vi vill förändra, specialisera eller utöka en befintlig klass så kan vi göra det genom ett arv.
+        Subklassen ärver föräldraklassens egenskaper och metoder. Frasen "Är en ..." ger vägledning om subklassen ska
+        vara ett arv.</p>
+
+        <h4>Komposition (Composition)</h4>
+        <p class="kmom">Komposition innebär att en klass använder sig av egenskaper från andra klasser utan att
+        ärva hela klassen. Den utökar och specialiserar klassen. Frasen "Har en ..." visar på en komposition.</p>
+
+        <h4>Interface</h4>
+        <p class="kmom">Interface definierar vilka metoder en klass måste implementera. Ett interface är ett kontrakt
+        att klassen lovar att implementera alla metoder som definieras.</p>
+
+        <h4>Trait</h4>
+        <p class="kmom">Trait är en återanvändbar samling metoder som kan användas inne i flera klasser utan att använda arv.
+        Eftersom PHP inte stödjer multipelt arv, används trait för att dela kod mellan klasser.
+
+
+        <p class="kmom">Jag började med att skapa klasserna Card och Deck samt controllern för routerna.
+        För att kunna visa upp bilder på spelkorten skapade jag, genom arv från Card, CardGraphic för att kunna
+        rendera filnamn och URL till bildfilerna. När jag skulle göra routen för att välja antal kort stötte jag på
+        mycket problem. Till slut insåg jag att koden försökte skicka med GET och inte POST, vilket gjorde att bildens
+        URL blev fel. Jag gjorde ett formulär för att välja hur många kort man ville dra och lade in en 'event.preventDefault'
+        så att det inte skulle skickas med GET. För att underlätta för mig hårdkodade jag in början av URL:en.</p>
+
+        <p class="kmom">Efter att jag gjort ApiController.php så insåg jag att jag nog gjort min tidigare kod onödigt
+        omständlig och att jag borde ha skickat med POST i routen för att välja antal kort, som i ApiController.php.
+        Jag får justera det längre fram.</p>
+
+        <p class="kmom">Arbetet med Symfony och MVC, där man delar upp logik och presentation i olika filer, ger en bra
+        och tydlig struktur. Det blir lättare att underhålla koden och den blir lättare att återanvända.</p>
+
+        <p class="kmom">Min TIL för veckan är skillnaden mellan Composition och Aggregation. Composition använder sig
+        av egenskaper från andra klasser utan att ärva hela klassen. Aggregation är inte lika starkt kopplat och kan
+        existera utan föräldraklassen. T ex Composition rum i ett hus och Aggregation hyresgäst i ett hus.</p>
+
 
         <h3 id="kmom03">Kmom03</h3>
         <p class="kmom">Här kommer redovisningstexten för detta kursmoment.
